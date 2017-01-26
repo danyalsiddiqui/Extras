@@ -283,6 +283,9 @@ a>.headerLinks
 .imageGrid{
     width: 100%;
     background: #bfbfbf;
+    overflow: hidden;
+    margin-bottom: 20px;
+    padding-bottom:50px;
 }
 .imageGridHeader{
     width: 100%;
@@ -298,44 +301,59 @@ a>.headerLinks
 
 .imageGridContent{
     width: 100%;
-    margin-bottom: 20px;
-    margin-top: -4px;
+    min-width: 1240px;
+    padding:5px 5px;
+    overflow: hidden;
 }
 .imageGridCol-1{
-    width: 20%;
+
     float: left;
 }
 .imageGridCol-2{
-    width: 20%;
+
     float: left;
 }
 .imageGridCol-3{
-    width: 20%;
+
     float: left;
 }
 .imageGridCol-4{
-    width: 20%;
+
     float: left;
 }
 .imageGridCol-5{
-    width: 20%;
     float: left;
 }
 
 .imageWidgit {
-    border: 10px solid  #e6e6e6;
-    margin: 3px;
+    margin: 5px;
+    position: relative;
     box-shadow:2px 2px 2px 2px #C9C9C9;
 }
-
+.imageWidgit:hover{
+    outline: 5px solid #ffff33;
+    outline-offset: -5px;
+}
 #text
 {
-    display: block;
+    display: none;
     z-index:100;
     position:absolute;
-    color:white;
-    font-size:24px;
-    font-weight:bold;
-    left:10px;
-    top:10px;
+    color:Black;
+    font-size:18px;
+    font-family:Arial Bold ;
+    left:0;
+    top:45%;
+    text-align:center;
+    width:100%
+}
+
+#textHome
+{
+    display: none;
+}
+
+#text>span{
+    background-color: #ffff33;
+    padding:4px;
 }
